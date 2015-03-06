@@ -1,0 +1,157 @@
+/* Layout for Vagabond Dancers User side */
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family:verdana, arial, helvetica, sans-serif;
+	color:#333;
+	background-color:white;
+	}
+	
+h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:28px;
+	line-height:28px;
+	font-weight:900;
+	color:#ccc;
+	}
+	
+p {
+	font:11px/20px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 16px 0px;
+	padding:0px;
+	}
+	
+#Content>p {margin:0px; text-indent:30px;}
+
+a {
+	color:#09c;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:600;
+	font-family:verdana, arial, helvetica, sans-serif;
+	}
+	
+a:link {color:#09c;}
+
+a:visited {color:#07a;}
+
+a:hover {background-color:#eee;}
+
+/* ***** Header Settings ***** */
+
+#head {
+    background-image:url('../images/header.jpg');
+    height: 141px;
+    background-position: left;
+	font-size:36px;
+	font-weight: bold;
+	color: #ccc;
+}
+
+.bodyHead {
+	float: left;
+	padding-top: 32px;
+	padding-left: 600px;
+	color: #000000;
+	font-size: 9px;
+}
+
+/* ******************* */
+
+/* These are experimental from http://paulyouthed.com/test/css-button-that-looks-like-hyperlink.php */
+#hyperlink-style-button{
+      background:none;
+      border:0;
+      color:#09c;
+      text-decoration:none;
+	  font-weight:600;
+    }
+#hyperlink-style-button:hover{ ... } {
+      background:none;
+      border:0;
+      color:#07a;
+      text-decoration:none;
+      cursor:pointer;
+      cursor:hand;
+    }
+
+/* *************************************** */
+
+#Content {
+	margin:0px 210px 50px 10px;
+	padding:10px;
+	}
+
+#Menu {
+	position:absolute;
+	top:190px;
+	right:20px;
+	width:172px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+/* Again, the ugly brilliant hack. */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:150px;
+	}
+/* Again, "be nice to Opera 5". */
+body>#Menu {width:150px;}
+
+.error {
+	color:#FF0033;
+	font-size:14px;
+	}
+	
+	
+	
+<!-- CSS styles for standard search box -->
+	#testsearchbar{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding: 10px 20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
